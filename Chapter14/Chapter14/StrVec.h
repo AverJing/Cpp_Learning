@@ -35,6 +35,9 @@ public:
 	StrVec(StrVec&&) noexcept;
 	StrVec& operator=(StrVec&&) noexcept;
 	~StrVec();
+	string& operator[](const size_t n);
+	const string& operator[](const size_t n) const;
+
 	void push_back(const string&);		// copy the element
 	size_t size() const { return first_free - elements; }
 	size_t capacity() const { return cap - elements; }

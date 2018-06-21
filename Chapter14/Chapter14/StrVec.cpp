@@ -47,6 +47,22 @@ StrVec::~StrVec()
 	free();
 }
 
+string & StrVec::operator[](const size_t n)
+{
+	if (elements + n < first_free)
+		return *(elements + n);
+	else
+		return;
+}
+
+const string & StrVec::operator[](const size_t n) const
+{
+	if (elements + n < first_free)
+		return *(elements + n);
+	else
+		return;
+}
+
 void StrVec::push_back(const string &s)
 {
 	chk_n_alloc();		// ensure that there is room for another element

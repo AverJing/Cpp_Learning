@@ -33,12 +33,24 @@
     <ClInclude Include="StrVec.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ex13_42_TextQuery.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ex13_44_String.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex13_34_36_37.cpp">
+    <ClCompile Include="ex13_44_String.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="StrVec.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HasPtr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex13_58.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
