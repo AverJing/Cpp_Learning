@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex3_part.cpp">
+    <ClCompile Include="ex3_42.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
