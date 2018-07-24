@@ -118,10 +118,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ex11_part.cpp" />
+    <ClInclude Include="base_tool.h" />
+    <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Sales_data.h" />
+    <ClCompile Include="DescriptionQuestion.cpp" />
+    <ClCompile Include="ex11_33_hard.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
