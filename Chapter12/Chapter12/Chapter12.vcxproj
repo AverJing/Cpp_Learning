@@ -19,11 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex12_part.cpp" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="base_tool.h" />
     <ClInclude Include="StrBlob.h" />
     <ClInclude Include="TextQueryStrBlob.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DescriptionQuestion.cpp" />
+    <ClCompile Include="ex12_26.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
