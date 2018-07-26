@@ -19,7 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DescriptionQuestion.cpp" />
+    <ClCompile Include="ex13_13.cpp" />
+    <ClCompile Include="ex13_17.cpp" />
+    <ClCompile Include="ex13_18.cpp" />
+    <ClCompile Include="ex13_19.cpp" />
+    <ClCompile Include="ex13_28.cpp" />
+    <ClCompile Include="ex13_30.cpp" />
+    <ClCompile Include="ex13_31.cpp" />
+    <ClCompile Include="ex13_34_36_37.cpp" />
     <ClCompile Include="ex13_44_String.cpp" />
+    <ClCompile Include="ex13_5_8_11_medium.cpp" />
     <ClCompile Include="ex13_58.cpp" />
     <ClCompile Include="HasPtr.cpp" />
     <ClCompile Include="StrVec.cpp" />
