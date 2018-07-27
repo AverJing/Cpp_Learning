@@ -8,6 +8,15 @@
 *
 */
 
+//   34: Write the Message class as described in this section.
+//
+//   36: Design and implement the corresponding Folder class. That class should
+//   hold a set that points to the Messages in that Folder.
+//
+//   37:  Add members to the Message class to insert or remove a given Folder*
+//   into folders.
+//        These members are analogous to Folder¡¯s addMsg and remMsg operations.
+
 #ifndef MESSAGE_H
 #define MESSAGE_H
 
