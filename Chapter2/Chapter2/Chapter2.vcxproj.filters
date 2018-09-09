@@ -20,7 +20,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex02_8.cpp">
+    <ClCompile Include="test.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ex02_04.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
