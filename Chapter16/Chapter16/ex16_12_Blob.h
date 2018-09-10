@@ -159,7 +159,7 @@ template<typename T>
 inline const T & Blob<T>::front() const
 {
 	check(0, "back on empty Blob");
-	return data->back();
+	return data->front();
 }
 
 template<typename T>

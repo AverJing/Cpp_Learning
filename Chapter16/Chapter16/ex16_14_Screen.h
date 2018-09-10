@@ -6,9 +6,8 @@
 #include <iostream>
 #include <string>
 
-using pos = std::string::size_type;
-template<pos, pos> class Screen;
-
+//typedef typename std::string::size_type size_type;
+//or
 using pos = std::string::size_type;
 template <pos, pos> class Screen;
 

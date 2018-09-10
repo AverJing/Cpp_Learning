@@ -23,5 +23,5 @@ void ex02_03() {
 }
 
 int main(){
-	int i = 09;
+	//int i = 09;    //octal
 }	
