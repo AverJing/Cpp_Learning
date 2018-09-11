@@ -15,11 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ex16_14_Screen.h">
+    <ClCompile Include="ex16_47_flip.cpp">
       <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="ex16_16_Vec.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
 </Project>

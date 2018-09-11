@@ -30,7 +30,7 @@ public:
 
 	//! constructor taking raw pointer.
 	//! set the refCount as 1
-	explicit shared_pointer(T* up, std::function<void(T*)> d = DebugDelete()) :
+	shared_pointer(T* up, std::function<void(T*)> d = DebugDelete()) :
 		ptr(up), refCount(new std::size_t(1)), deleter(d) { }
 
 	//! copy constructor.
@@ -131,7 +131,7 @@ swap(shared_pointer<T>& lhs, shared_pointer<T>& rhs)
 template<typename T>
 inline
 shared_pointer<T>::shared_pointer(shared_pointer&& sp) noexcept:
-ptr(sp.ptr), refCount(sp.refCount), deleter(std::move(sp.deleter))
+ptr(sp.ptr), refCount(sp.refCount), deleter(std::move(sp.deleter))//call movement constructor
 {
 	sp.ptr = nullptr;
 	sp.refCount = nullptr;

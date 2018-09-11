@@ -16,8 +16,9 @@ int main() {
 	int *p = new int(19);
 	shared_pointer<int> i1(p);
 	{
-		shared_pointer<int> i2(p);
-		cout << *i2.get();
+		shared_pointer<int> i2(i1);
+		cout << i1.use_count() << ' ' << i2.use_count(); 
+		//cout << *i2.get();
 	}
 
 	return 0;
