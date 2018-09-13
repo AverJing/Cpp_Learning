@@ -34,7 +34,7 @@ template <typename T> class Vec {
 
 public:
 	Vec() : elements(nullptr), first_free(nullptr), cap(nullptr) {}
-	Vec(std::initializer_list<T>);
+	Vec(const std::initializer_list<T>&);
 	Vec(const Vec<T>&);
 	Vec& operator=(const Vec<T>&);
 	Vec(Vec<T>&&) NOEXCEPT;
@@ -56,6 +56,10 @@ public:
 	void reserve(size_t new_cap);
 	void resize(size_t count);
 	void resize(size_t count, const T&);
+
+	//ex16_58
+	template<typename ... Args>
+	inline void emplace_back(Args&& ... args);
 
 private:
 	std::pair<T*, T*> alloc_n_copy(const T*, const T*);
@@ -115,7 +119,7 @@ template <typename T> bool operator>=(const Vec<T>& lhs, const Vec<T>& rhs)
 // member functions
 //------------------------------------------------------------------------------
 
-template <typename T> Vec<T>::Vec(std::initializer_list<T> il)
+template <typename T> Vec<T>::Vec(const std::initializer_list<T>& il)
 {
 	range_initialize(il.begin(), il.end());
 }
@@ -232,3 +236,11 @@ void Vec<T>::range_initialize(const T* first, const T* last)
 }
 
 #endif // !EX_16_16_VEC_H
+
+template<typename T>
+template<typename ...Args>
+inline void Vec<T>::emplace_back(Args && ...args)
+{
+	chk_n_alloc();
+	alloc.construct(first_free++, std::forward<Args>(args)...);
+}

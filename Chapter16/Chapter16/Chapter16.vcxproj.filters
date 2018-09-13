@@ -15,7 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex16_53.cpp">
+    <ClInclude Include="ex16_58_StrVec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ex16_16_Vec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ex16_48_debug_rep.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ex16_64.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

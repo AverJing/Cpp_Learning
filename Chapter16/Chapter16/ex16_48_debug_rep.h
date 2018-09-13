@@ -23,6 +23,18 @@ string debug_rep(const T&);
 template<typename T>
 string debug_rep(T*);
 
+//ex16_65
+template<>
+std::string debug_rep(char *t)
+{
+	return std::string(t);
+}
+template<>
+std::string debug_rep(const char *t)
+{
+	return std::string(t);
+}
+
 //3
 string debug_rep(const string&);
 
