@@ -19,15 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex3_20.cpp" />
-    <ClCompile Include="ex3_21.cpp" />
-    <ClCompile Include="ex3_22.cpp" />
-    <ClCompile Include="ex3_23.cpp" />
+    <ClCompile Include="Effective STL\01Container\Tip06_readInts.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{EF0A6A4D-4563-4936-B83F-454A7C773AF1}</ProjectGuid>
-    <RootNamespace>Chapter3</RootNamespace>
+    <ProjectGuid>{AAA2B23E-5657-4A0D-95EC-D07B6F4B5664}</ProjectGuid>
+    <RootNamespace>STLlearning</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -94,9 +91,6 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
-    <Link>
-      <SubSystem>Console</SubSystem>
-    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>

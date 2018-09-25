@@ -17,7 +17,7 @@ int main() {
 
 	cout << s << endl;
 
-	for (auto &e : s) {
+	for (char &e : s) {//or char: auto
 		e = 'X';
 	}
 	cout << s << endl;
