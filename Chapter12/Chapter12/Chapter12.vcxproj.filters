@@ -15,13 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="StrBlob.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="TextQueryStrBlob.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="base_tool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EX12_2_19_StrBlob.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StrBlob.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TextQuery.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TextQueryTemplate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Ex12_27_29.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -29,7 +41,7 @@
     <ClCompile Include="DescriptionQuestion.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ex12_26.cpp">
+    <ClCompile Include="Ex12_27_29_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

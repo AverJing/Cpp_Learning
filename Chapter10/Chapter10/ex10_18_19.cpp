@@ -25,6 +25,10 @@ void ex10_18(vector<string> &vs, size_t sz) {
 	//stable_sort(vs.begin(), vs.end(), [](string const& a, string const& b) {return a.size() < b.size(); });
 	//get an iterator to the first one whose size() is >= a
 	auto pivot = partition(vs.begin(), vs.end(), [sz](string& a) {return a.size() >= sz; });
+	// Reorders the elements in the range [first, last) in such a way 
+	//that all elements for which the predicate p returns true precede 
+	//the elements for which predicate p returns false
+
 	//print the result
 	for_each(vs.begin(), pivot, [](string& a) {cout << a << ' '; });
 }

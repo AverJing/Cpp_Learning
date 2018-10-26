@@ -14,15 +14,6 @@
 
 using namespace std;
 
-//Write a function that takes and returns an istream &
-istream &ex8_1(istream &is) {
-	string str;
-	while (is >> str)
-		cout << str << endl;
-	is.clear();//reset  the stream
-	return is;
-}
-
 //Write a function to open a file for input and read its contents into a vector
 //of strings, storing each line as a separate element in the vector.
 void ex8_4(const string &fileName, vector<string> &svec) {

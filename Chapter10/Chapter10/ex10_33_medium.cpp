@@ -26,11 +26,12 @@ void ex10_33() {
 	ofstream even_out("even.txt");
 	ostream_iterator<int> odd(odd_out, " "), even(even_out, "\n");
 
-	for_each(in_it, eof, [&odd, &even](const int i) { *(i & 0x1 ? odd : even)++ = i; });
+	for_each(in_it, eof, [&odd, &even](const int i) { *(i & 0x1 ? odd : even)++ = i; 
+	/*or  (i & 0x1 ? odd : even) = i*/});
 
 }
 
 int main() {
-
+	ex10_33();
 	return 0;
 }

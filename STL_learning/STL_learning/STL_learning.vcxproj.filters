@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Effective STL\01Container\Tip06_readInts.cpp">
+    <ClCompile Include="MemoryTest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

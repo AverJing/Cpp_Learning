@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{20061F9C-6D37-4C40-A1FB-F86450BE7726}</ProjectGuid>
     <RootNamespace>Chapter6</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -124,7 +124,7 @@
     <ClInclude Include="Chapter6.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex6_65.cpp" />
+    <ClCompile Include="ex6_part.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -102,6 +102,14 @@ public:
 			delete ptr;*/
 		decrement_n_destroy();
 	}
+
+	//注意，详解 见More effective C++ P148  It28
+	//为了实现  所有类型的转换函数
+	//举例   使用智能指针的基类虚函数的调用
+	template<class newType>
+	operator shared_pointer<newType>() {
+		return  shared_pointer<newType>(ptr);
+	}
 private:
 	T * ptr = nullptr;
 	//static unsigned count;

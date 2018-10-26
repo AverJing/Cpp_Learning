@@ -20,11 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ex16_16_Vec.h" />
+    <ClInclude Include="ex16_28_shared_ptr.h" />
+    <ClInclude Include="ex16_28_unique_ptr.h" />
     <ClInclude Include="ex16_48_debug_rep.h" />
     <ClInclude Include="ex16_58_StrVec.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex16_64.cpp" />
+    <ClCompile Include="ex16_28_test.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

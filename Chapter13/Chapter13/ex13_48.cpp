@@ -54,8 +54,8 @@ int main() {
 	svec.push_back(s3);
 	svec.push_back(s4);
 	svec.push_back(s5);
-	svec.push_back(baz());
-	svec.push_back("good job");
+	svec.push_back(baz());//调用两次移动构造  一次是baz的返回时，一次是构造vec中的元素
+	svec.push_back("good job");//调用一次
 
 	for (const auto& s : svec) {
 		std::cout << s << std::endl;

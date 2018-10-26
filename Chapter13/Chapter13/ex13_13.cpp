@@ -19,7 +19,10 @@
 
 #include <iostream>
 #include <vector>
-using namespace std;
+
+using std::cout;
+using std::endl;
+using std::vector;
 
 struct X {
 	X() { cout << "X()" << endl; }
@@ -28,21 +31,24 @@ struct X {
 	X& operator=(const X& x) {
 		*this = x;
 		cout << "operator=" << endl;
+		return *this;
 	}
 };
 
-void f(const X& rx, X x)
+void f(const X& rx, X x) //call copy constructor
 {
 	vector<X> vec;
 	vec.reserve(2);
-	vec.push_back(rx);
-	vec.push_back(x);
-}
+	vec.push_back(rx);//call copy constructor
+	vec.push_back(x);//call copy constructor
+}//call destructor
 
 int main() {
-	X* px = new X;
+	X tmp = X();
+	X tmp2 = tmp;
+	X* px = new X();//call constructor
 	f(*px, *px);
-	delete px;
+	delete px;//call destructor
 
 	return 0;
 }

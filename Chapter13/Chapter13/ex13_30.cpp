@@ -43,7 +43,13 @@ void swap(HasPtr& lhs, HasPtr& rhs)
 	std::cout << "call swap(HasPtr& lhs, HasPtr& rhs)" << std::endl;
 }
 
-int main() {
+void test() {
+	HasPtr p("hello"), p2("world.");
+	using std::swap;
 
+	swap(p, p2);
+}
+int main() {
+	test();
 	return 0;
 }

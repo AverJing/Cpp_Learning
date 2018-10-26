@@ -23,4 +23,8 @@ int main(){
 	vector<Widget> w;
 	w.reserve(50);
 	
+	auto s = new vector<Widget>();
+	s->reserve(50);
+	
+	delete	 s;
 }	

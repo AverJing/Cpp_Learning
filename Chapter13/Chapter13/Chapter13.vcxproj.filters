@@ -15,25 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ex13_26.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="ex13_27.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="ex13_28.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="HasPtr.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Message.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="StrVec.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="ex13_42_TextQuery.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ex13_39_40.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="ex13_44_String.h">
@@ -41,46 +26,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex13_44_String.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="StrVec.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="HasPtr.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ex13_58.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ex13_34_36_37.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="DescriptionQuestion.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ex13_5_8_11_medium.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ex13_13.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ex13_17.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ex13_18.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ex13_19.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ex13_28.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ex13_31.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ex13_30.cpp">
+    <ClCompile Include="Test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

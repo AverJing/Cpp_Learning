@@ -23,9 +23,10 @@ public:
 	friend bool operator<(const HasPtr&, const HasPtr&);
 	HasPtr(const string &s = string()) :ps(new string(s)), i(0) {}
 	HasPtr(const HasPtr &rhs) : ps(new string(*rhs.ps)), i(rhs.i) { }
-	HasPtr& operator=(const HasPtr&);
 	HasPtr(HasPtr&&) noexcept;
-	HasPtr& operator=(HasPtr&&) noexcept;
+	//HasPtr& operator=(const HasPtr&);
+	//HasPtr& operator=(HasPtr&&) noexcept;
+	HasPtr& operator=(HasPtr);
 	~HasPtr();
 
 private:

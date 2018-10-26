@@ -18,6 +18,7 @@
 
 using namespace std;
 
+//aggregate class
 struct PersonInfo
 {
 	string name;
@@ -32,7 +33,7 @@ void ex8_11(const string &fileName) {
 	while (getline(ifle, line)) {
 		PersonInfo info;
 		record.clear();
-		record.str(line);
+		record.str(line);  //key point
 		record >> info.name;
 		while (record >> word) info.phones.push_back(word);
 		people.push_back(info);

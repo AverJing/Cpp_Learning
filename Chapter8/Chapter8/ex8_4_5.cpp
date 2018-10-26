@@ -25,7 +25,7 @@ void ex8_4(const string &fileName, vector<string> &svec) {
 }
 
 //Rewrite the previous program to store each word in separate element
-void ex8_4(const string &fileName, vector<string> &svec) {
+void ex8_5(const string &fileName, vector<string> &svec) {
 	ifstream ifile(fileName, ios::in);
 	if (ifile) {
 		string str;

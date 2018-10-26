@@ -9,8 +9,14 @@ HasPtr& HasPtr::operator=(const HasPtr& rhs)
 	return *this;
 }
 
+HasPtr & HasPtr::operator=(HasPtr rhs)
+{
+	swap(*this, rhs);
+	return *this;
+}
+
 HasPtr::~HasPtr() {
-	delete ps;
+	delete ps; ps = nullptr;
 }
 
 inline void swap(HasPtr &lhs, HasPtr &rhs) {

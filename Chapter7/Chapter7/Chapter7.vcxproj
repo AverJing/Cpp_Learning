@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{8B491F23-BF9C-459A-907C-E4ED5216FDBF}</ProjectGuid>
     <RootNamespace>Chapter7</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -121,13 +121,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ex7_part.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="Account.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Sales_data.h" />
     <ClInclude Include="Screen.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClassStaticMemberTest.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

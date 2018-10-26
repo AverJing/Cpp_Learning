@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{E5F8B2A4-6682-49F3-A260-4E6B14D591A9}</ProjectGuid>
     <RootNamespace>Chapter8</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -122,9 +122,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Sales_data.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="ex8_13.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

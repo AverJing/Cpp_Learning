@@ -17,6 +17,12 @@ int main() {
 	shared_pointer<int> i1(p);
 	{
 		shared_pointer<int> i2(i1);
+		//call operator bool() const { return ptr ? true : false; }
+		//wrong
+		//²Î¿¼more effective C++ It28
+		if (i2 == i1) { std::cout << "....." << std::endl; }
+
+
 		cout << i1.use_count() << ' ' << i2.use_count(); 
 		//cout << *i2.get();
 	}

@@ -24,9 +24,15 @@
     <ClInclude Include="ex16_48_debug_rep.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ex16_28_shared_ptr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ex16_28_unique_ptr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex16_64.cpp">
+    <ClCompile Include="ex16_28_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

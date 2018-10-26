@@ -14,9 +14,9 @@ using namespace std;
 
 class TextQuery {
 public:
-	TextQuery(fstream& ifile):infile(ifile){
+	TextQuery(fstream& ifile){
 		string str;
-		while (getline(infile, str)) {
+		while (getline(ifile, str)) {
 			line.push_back(str);
 			istringstream is(str);
 			string word;
@@ -39,8 +39,9 @@ public:
 		}
 	}
 private:
-	fstream& infile;
+	//fstream& infile;
 	vector<string> line;
 	map<string, set<int>> result;
+	//注意文本是不变的，可以使用指针指向同一个保存文本的地方，减少拷贝的时间。
 };
 #endif

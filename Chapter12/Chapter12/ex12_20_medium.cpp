@@ -8,7 +8,8 @@
 
 #include<iostream>
 #include <fstream>
-#include "StrBlob.h"
+//#include "StrBlob.h"
+#include "EX12_2_19_StrBlob.h"
 
 using namespace std;
 
@@ -20,15 +21,16 @@ void ex12_20() {
 		str.push_back(line);
 	}
 	StrBlobPtr sptr(str);
-	/*for (int i = 0; i < str.size(); ++i) {
+	for (int i = 0; i < str.size(); ++i) {
 	cout << sptr.deref();
 	sptr.incr();
-	}*/
+	}
+	/*
 	for (StrBlobPtr beg(str.begin()), end(str.end()); beg != end; beg.incr())
-		cout << beg.deref() << endl;
+		cout << beg.deref() << endl;*/
 }
 
 int main() {
-
+	ex12_20();
 	return 0;
 }

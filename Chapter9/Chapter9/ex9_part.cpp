@@ -27,25 +27,6 @@ void ex9_2() {
 	list<deque<int>> ldi;
 }
 
-//Write a function that takes a pair of iterators to vector<int> and an int value.
-//Look for the value int the range and return a bool indicating whether it was found.
-bool ex9_3(vector<int>::const_iterator begin, vector<int>::const_iterator end, int temp) {
-	for (auto iter = begin; iter != end; ++iter) {
-		if (*iter == temp)
-			return true;
-	}
-	return false;
-}
-
-//Rewrite the previous program to return an iterator to the requested element.
-vector<int>::const_iterator ex9_4(vector<int>::const_iterator begin, vector<int>::const_iterator end, int temp) {
-	for (auto iter = begin; iter != end; ++iter) {
-		if (*iter == temp)
-			return iter;
-	}
-	return end;
-}
-
 //Show an example of each of the six ways to create and initialize a vector.
 //Explain what values each vector contains.
 void ex9_11() {
@@ -71,21 +52,6 @@ void ex9_12() {
 	vector<int> dvec2(ivec.cbegin(), ivec.cend());
 	for (auto &d : dvec2)
 		cout << d << ' ';
-	cout << endl;
-}
-
-//Write a program to assign the elements from a list<char *> pointers to a vector<string>
-void ex9_14() {
-	list<const char *> clist = { "hello", "hi" };//should be const 
-	vector<string> svec(clist.cbegin(), clist.cend()); //ok
-	for (auto &s : svec)
-		cout << s << ' ';
-	cout << endl;
-	clist.push_back("Bye");
-
-	svec.assign(clist.cbegin(), clist.cend());
-	for (auto &s : svec)
-		cout << s << ' ';
 	cout << endl;
 }
 
@@ -210,7 +176,7 @@ void ex9_26() {
 	//take some time to think it seriously
 	while (begin_list != ilist.end()) {
 		if (*begin_list % 2) {
-			begin_list = ilist.erase(begin_list);
+			begin_list = ilist.erase(begin_list);  //update iterator.
 		}
 		else
 			++begin_list;

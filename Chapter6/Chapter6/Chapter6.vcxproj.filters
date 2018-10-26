@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ex6_65.cpp">
+    <ClCompile Include="ex6_part.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>

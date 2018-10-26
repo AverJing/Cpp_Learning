@@ -10,7 +10,8 @@
 #include <algorithm>
 #include <map>
 #include <set>
-#include "StrVec.h"
+//#include "StrVec.h"
+#include "ex13_39_40.h"
 
 using namespace std;
 
