@@ -65,7 +65,7 @@ protected:
 	//note: see explaination in Book
 	RCObject() :refCount(0), shareable(true) {};
 	RCObject(const RCObject&) :refCount(0), shareable(true) {};
-	RCObject& operator=(const RCObject& rhs) { return *this; }
+	RCObject& operator=(const RCObject& rhs) { return *this; }//abnormal
 	virtual ~RCObject() = 0;
 private:
 	unsigned int refCount;

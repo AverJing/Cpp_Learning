@@ -19,12 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CH07\Item29_COW_3.cpp" />
+    <ClInclude Include="..\..\..\LeetCode\LeetCode\AlgorithmIntro\Level0\CH01\TestCase.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{C7BC0D45-D5E9-46C7-83CC-248630ACCA6B}</ProjectGuid>
-    <RootNamespace>MoreEffectiveC</RootNamespace>
+    <ProjectGuid>{3D1A6F2F-B52F-478C-9212-0B0ED49819C5}</ProjectGuid>
+    <RootNamespace>JjhouCourses</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -80,6 +80,9 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>

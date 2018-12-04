@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CH07\Item29_COW_3.cpp">
+    <ClCompile Include="CH05\Code05_06_03_random.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
