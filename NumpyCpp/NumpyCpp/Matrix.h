@@ -300,12 +300,26 @@ public:
 	//还有二元+，-，*，/运算定义为非成员函数
 
 	//undefined
-	template<typename M>//std::enable_if<Matrix_type<M>(), Matrix<T, N>&>::type
-	Matrix<T, N>& operator+=(const M&);
+	//template<typename M>//std::enable_if<Matrix_type<M>(), Matrix<T, N>&>::type
+	//Matrix<T, N>& operator+=(const M&);
 	
 	void ReconstructByRandom(T start, T end) {
 		for (auto &e : elems)
 			e = randomArithmetic<T>(start, end);
+	}
+
+	//没有做溢出判断
+	T sum() {
+		return std::accumulate(elems.begin(), elems.end(), T());
+	}
+	T average() {
+		return sum() / elems.size();
+	}
+	T min() {
+		return std::min_element(elems.begin(), elems.end());
+	}
+	T max() {
+		return std::max_element(elems.begin(), elems.end());
 	}
 private:
 	Matrix_slice<N> desc;									//实现N个维度大小的切片

@@ -8,9 +8,6 @@
 *
 */
 #include <iostream>
-#include "xtensor/xarray.hpp"
-#include "xtensor/xio.hpp"
-#include "xtensor/xview.hpp"
 #include "Matrix.h"
 #include "Random.h"
 /*
@@ -102,16 +99,22 @@ void print(const slice& s, Args... args) {
 	std::cout << sizeof...(Args) + 1 << std::endl;
 }
 
+//帮助理解完美转发
+//注意
+//int&& b = 1;
+//f(b);
+//只会调用f(int& a)，记住int&&并不是右值了，只是它能被右值初始化。记住右值引用a是一个绑定了右值对象的左值
+void f(int& a) {
+	std::cout << 111111111 << '\n';
+}
+
+void f(int&& a) {
+	std::cout << 22222222 << '\n';
+}
+
+
 int main(int argc, char* argv[])
 {
-	/*xt::xarray<int> arr
-	{ 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-
-	arr.reshape({ 3, 3 });
-	xt::view_type testView = xt::view(arr, 1, 1);
-
-	std::cout << arr << std::endl;;
-	std::cout << testView;*/
 	
 	//hello(1, 2, 3, 4, 5);
 
@@ -172,5 +175,7 @@ int main(int argc, char* argv[])
 	std::cout << "\n";
 	for (int i = 0; i < 10; ++i)
 		std::cout << randomArithmetic<double>(0, 1) << ' ';*/
+	
+
 	return 0;
 }
