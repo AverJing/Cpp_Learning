@@ -9,6 +9,7 @@
 */
 
 #include <iostream>
+#include <vector>
 
 struct StaticClass {
 	static int a;
@@ -26,6 +27,6 @@ int StaticClass::a = 10;
 int main(){
 	StaticClass s;
 	s.print();
-	
+	std::vector
 	return 0;
 }
